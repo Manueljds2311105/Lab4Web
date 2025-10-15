@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Layout Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>Hubungi Saya</h1>
+    </header>
+
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="about.html">About</a>
+      <a href="kontak.html" class="active">Kontak</a>
+    </nav>
+
+    <section id="main">
+      <h2>Form Kontak</h2>
+      <form action="#" method="post" class="form-contact">
+        <label>Nama:</label>
+        <input type="text" name="nama" placeholder="Masukkan nama Anda" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Masukkan email Anda" required>
+
+        <label>Pesan:</label>
+        <textarea name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+    </footer>
+  </div>
+</body>
+</html>
