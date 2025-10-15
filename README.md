@@ -56,7 +56,7 @@ Lalu tambahkan CSS di dalam tag `<style>`:
 </style>
 ```
 
-Pada tahap ini, mahasiswa belajar mengenal **konsep box element**, yaitu bahwa setiap elemen HTML dianggap sebagai sebuah kotak.  
+Pada tahap ini, belajar mengenal **konsep box element**, yaitu bahwa setiap elemen HTML dianggap sebagai sebuah kotak.  
 Tiga buah elemen `<div>` dibuat dengan class berbeda (`div1`, `div2`, `div3`) untuk mempraktikkan cara pengaturan tata letak dan warna menggunakan CSS.  
 Hasil yang diharapkan adalah tiga kotak berwarna merah, kuning, dan hijau yang tampil sejajar secara horizontal.
 
@@ -129,7 +129,7 @@ Isi **home.html**:
 ```
 
 Setelah memahami dasar box element, langkah ini berfokus pada pembuatan **struktur layout halaman web** secara keseluruhan.  
-Mahasiswa membuat folder baru bernama **`lab4_layout`** dan dua file, yaitu `home.html` dan `style.css`.  
+Harus membuat folder baru bernama **`lab4_layout`** dan dua file, yaitu `home.html` dan `style.css`.  
 Struktur HTML disusun menggunakan **elemen semantik HTML5** seperti:
 - `<header>` untuk bagian kepala halaman,  
 - `<nav>` untuk navigasi,  
@@ -248,7 +248,7 @@ Isi `<aside>` dengan widget:
 </aside>
 ```
 
-Pada langkah ini, mahasiswa belajar membuat **sidebar** yang berisi kumpulan widget seperti tautan atau informasi tambahan.  
+Pada langkah ini, belajar membuat **sidebar** yang berisi kumpulan widget seperti tautan atau informasi tambahan.  
 Elemen `<aside>` digunakan untuk memisahkan konten utama dan sidebar, kemudian diatur menggunakan CSS agar menempel di sisi kanan layout.  
 Hasil akhirnya, sidebar tampil sebagai kolom tambahan dengan judul dan daftar tautan.
 
@@ -424,7 +424,7 @@ Tambahkan CSS berikut pada `style.css`:
 }
 ```
 
-Langkah ini bertujuan agar mahasiswa dapat membuat **formulir kontak sederhana**.  
+Langkah ini bertujuan agar dapat membuat **formulir kontak sederhana**.  
 Halaman baru bernama **`kontak.html`** dibuat dengan elemen `<form>` yang berisi input nama, email, dan pesan.  
 Properti CSS seperti `flex-direction: column;` digunakan untuk mengatur tampilan vertikal form.  
 Hasil akhirnya adalah halaman “Contact” dengan tampilan bersih dan tombol kirim berwarna biru.
