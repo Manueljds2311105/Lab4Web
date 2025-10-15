@@ -1,18 +1,12 @@
-# 🌐 Praktikum 4 - CSS Layout
+# Praktikum 4 - CSS Layout
 
-## 📘 Tujuan
-Praktikum ini bertujuan agar mahasiswa memahami konsep dasar pembuatan layout web menggunakan **HTML dan CSS**, meliputi:
-1. Struktur dasar pembuatan layout web.  
-2. Konsep box element pada HTML.  
-3. Penggunaan properti `float` dan `clear` dalam CSS.  
-4. Penerapan elemen semantik HTML5.  
-5. Pembuatan layout web sederhana menggunakan HTML dan CSS.
+**Nama:** Manuel Johansen Dolok Saribu  
+**NIM:** 312410493  
+**Mata Kuliah:** Pemrograman Web  
+**Dosen Pengampu:** Agung Nugroho, S.Kom., M.Kom.  
 
----
-
-## 🧩 1. Persiapan
+## 1. Persiapan
 Langkah awal:
-- Buka text editor (misalnya VS Code).
 - Buat folder baru bernama **Lab4Web**.
 - Buat file **lab4_box.html** di dalam folder tersebut.
 
@@ -33,9 +27,13 @@ Isi dasar file:
 </html>
 ```
 
+Langkah pertama bertujuan untuk menyiapkan struktur awal dokumen HTML.  
+Mahasiswa membuat file **`lab4_box.html`** dan menuliskan struktur dasar HTML dengan tag `<html>`, `<head>`, dan `<body>`.  
+Hasilnya adalah halaman kosong yang siap digunakan untuk menampilkan elemen layout menggunakan CSS.
+
 ---
 
-## 📦 2. Membuat Box Element
+## 2. Membuat Box Element
 Tambahkan elemen `<div>` ke dalam file untuk membuat tiga kotak:
 ```html
 <section>
@@ -58,12 +56,13 @@ Lalu tambahkan CSS di dalam tag `<style>`:
 </style>
 ```
 
-📷 **Hasil:**
-Tiga kotak sejajar secara horizontal dengan warna merah, kuning, dan hijau.
+Pada tahap ini, mahasiswa belajar mengenal **konsep box element**, yaitu bahwa setiap elemen HTML dianggap sebagai sebuah kotak.  
+Tiga buah elemen `<div>` dibuat dengan class berbeda (`div1`, `div2`, `div3`) untuk mempraktikkan cara pengaturan tata letak dan warna menggunakan CSS.  
+Hasil yang diharapkan adalah tiga kotak berwarna merah, kuning, dan hijau yang tampil sejajar secara horizontal.
 
 ---
 
-## 🧱 3. Menambahkan Clearfix
+## 3. Menambahkan Clearfix
 Tambahkan elemen keempat setelah div3:
 ```html
 <div class="div4">Div 4</div>
@@ -78,12 +77,14 @@ Dan tambahkan CSS:
 }
 ```
 
-📷 **Hasil:**
-Kotak biru muncul di bawah tiga kotak pertama karena efek `clear: left`.
+Langkah ini bertujuan untuk memahami fungsi **properti `clear`** pada CSS.  
+Ketika elemen-elemen diatur menggunakan `float`, elemen berikutnya bisa ikut “terangkat”.  
+Dengan menambahkan elemen baru (`div4`) dan menerapkan `clear: left;`, elemen tersebut akan ditempatkan di bawah tiga kotak pertama.  
+Hasilnya adalah kotak keempat (biru) tampil di baris baru, tidak sejajar dengan kotak sebelumnya.
 
 ---
 
-## 🧭 4. Membuat Layout Web Sederhana
+## 4. Membuat Layout Web Sederhana
 Buat folder baru **lab4_layout**  
 Di dalamnya buat dua file:
 - `home.html`
@@ -127,9 +128,18 @@ Isi **home.html**:
 </html>
 ```
 
+Setelah memahami dasar box element, langkah ini berfokus pada pembuatan **struktur layout halaman web** secara keseluruhan.  
+Mahasiswa membuat folder baru bernama **`lab4_layout`** dan dua file, yaitu `home.html` dan `style.css`.  
+Struktur HTML disusun menggunakan **elemen semantik HTML5** seperti:
+- `<header>` untuk bagian kepala halaman,  
+- `<nav>` untuk navigasi,  
+- `<section>` untuk area konten utama,  
+- `<aside>` untuk sidebar, dan  
+- `<footer>` untuk bagian bawah halaman.
+
 ---
 
-## 🎨 5. Menambahkan Style (style.css)
+## 5. Menambahkan Style (style.css)
 ```css
 /* Reset dan Font */
 * {
@@ -212,12 +222,18 @@ footer {
 }
 ```
 
-📷 **Hasil:**  
-Tampilan web sederhana dengan header, navigasi, hero section, sidebar, main content, dan footer.
+Tahap ini digunakan untuk memperindah tampilan layout menggunakan CSS.  
+Beberapa bagian penting yang diatur meliputi:
+- Reset margin dan padding pada seluruh elemen,  
+- Penentuan lebar layout (`width: 980px;`),  
+- Pewarnaan header dan navigasi,  
+- Penataan **hero section** agar terlihat menarik.  
+
+Hasil akhirnya, halaman memiliki tampilan layout yang terpusat dengan navigasi berwarna biru, header berwarna abu muda, dan area konten siap diisi.
 
 ---
 
-## 🧰 6. Menambahkan Widget Sidebar
+## 6. Menambahkan Widget Sidebar
 Isi `<aside>` dengan widget:
 ```html
 <aside id="sidebar">
@@ -232,12 +248,13 @@ Isi `<aside>` dengan widget:
 </aside>
 ```
 
-📷 **Hasil:**  
-Sidebar berisi daftar link dengan tampilan kotak (widget).
+Pada langkah ini, mahasiswa belajar membuat **sidebar** yang berisi kumpulan widget seperti tautan atau informasi tambahan.  
+Elemen `<aside>` digunakan untuk memisahkan konten utama dan sidebar, kemudian diatur menggunakan CSS agar menempel di sisi kanan layout.  
+Hasil akhirnya, sidebar tampil sebagai kolom tambahan dengan judul dan daftar tautan.
 
 ---
 
-## 🧾 7. Menambahkan Konten di Main Section
+## 7. Menambahkan Konten di Main Section
 ```html
 <section id="main">
   <div class="row">
@@ -251,12 +268,14 @@ Sidebar berisi daftar link dengan tampilan kotak (widget).
 </section>
 ```
 
-📷 **Hasil:**  
-Tiga kolom konten sejajar dengan gambar berbentuk lingkaran.
+Langkah ini berfokus pada penambahan konten utama berupa tiga kolom kotak (`div.box`).  
+Setiap kotak berisi gambar lingkaran, judul, paragraf, dan tombol.  
+Dengan menggunakan properti `float` dan `width: 33.33%`, ketiga kotak ditampilkan sejajar.  
+Hasilnya adalah tampilan konten utama yang rapi seperti layout website profesional.
 
 ---
 
-## 📰 8. Menambahkan Artikel
+## 8. Menambahkan Artikel
 Tambahkan konten artikel di bawah main:
 ```html
 <hr class="divider" />
@@ -267,14 +286,15 @@ Tambahkan konten artikel di bawah main:
 </article>
 ```
 
-📷 **Hasil:**  
-Tampilan artikel dengan gambar di sisi kiri/kanan dan teks di sampingnya.
+Tahap ini mengajarkan bagaimana membuat konten artikel yang lebih panjang menggunakan elemen `<article>`.  
+Gambar ditampilkan di sisi kiri atau kanan teks menggunakan properti `float`, sedangkan garis horizontal `<hr>` digunakan sebagai pembatas antar artikel.  
+Hasil akhirnya berupa tampilan dua artikel dengan layout bergantian (gambar di kiri dan kanan), menyerupai format majalah online.
 
 ---
 
-## 🧩 9. Tugas Tambahan: Membuat Halaman About dan Contact
+## 9. Tugas Tambahan: Membuat Halaman About dan Contact
 
-### 🧑‍💼 A. Layout Halaman About
+### A. Layout Halaman About
 Buat file **about.html**:
 ```html
 <!DOCTYPE html>
@@ -314,7 +334,13 @@ Buat file **about.html**:
 </html>
 ```
 
-### 💌 B. Layout Halaman Contact
+Langkah ini bertujuan untuk menambahkan halaman baru bernama **`about.html`**.  
+Halaman ini menampilkan informasi tentang penulis atau pemilik website.  
+Struktur halaman masih menggunakan layout utama (header, nav, main, footer) agar konsisten.  
+Kontennya berisi **profil singkat dan daftar portfolio**.  
+Hasil akhirnya adalah halaman “About” yang memberikan informasi tambahan tentang identitas pembuat web.
+
+### B. Layout Halaman Contact
 Buat file **kontak.html**:
 ```html
 <!DOCTYPE html>
@@ -398,23 +424,22 @@ Tambahkan CSS berikut pada `style.css`:
 }
 ```
 
-📷 **Hasil:**  
-- Halaman **About** menampilkan deskripsi dan portfolio.  
-- Halaman **Contact** menampilkan form input nama, email, dan pesan.
+Langkah ini bertujuan agar mahasiswa dapat membuat **formulir kontak sederhana**.  
+Halaman baru bernama **`kontak.html`** dibuat dengan elemen `<form>` yang berisi input nama, email, dan pesan.  
+Properti CSS seperti `flex-direction: column;` digunakan untuk mengatur tampilan vertikal form.  
+Hasil akhirnya adalah halaman “Contact” dengan tampilan bersih dan tombol kirim berwarna biru.
 
 ---
 
-## ✨ Kesimpulan
-Dalam praktikum ini dipelajari:
-- Cara membuat layout web menggunakan **box element** dan **float**.  
-- Penggunaan **elemen semantik HTML5** seperti `<header>`, `<nav>`, `<section>`, `<aside>`, dan `<footer>`.  
-- Cara mengatur posisi elemen dengan **CSS layout** untuk menghasilkan tampilan web yang terstruktur dan responsif.  
-- Pembuatan halaman tambahan seperti **About** dan **Contact** menggunakan layout yang konsisten.
-
----
-
-**🧑‍💻 Dibuat oleh:**  
-_Nama Mahasiswa_  
-**NIM:** _Isi dengan NIM kamu_  
-**Mata Kuliah:** Pemrograman Web  
-**Dosen Pengampu:** Agung Nugroho, S.Kom., M.Kom._  
+## Screenshot
+![foto](https://github.com/Manueljds2311105/foto/blob/168cbcbf0a866b4ebdf4cec84dd3dc7c3acde30d/Screenshot%202025-10-15%20103513.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/168cbcbf0a866b4ebdf4cec84dd3dc7c3acde30d/Screenshot%202025-10-15%20104113.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/168cbcbf0a866b4ebdf4cec84dd3dc7c3acde30d/Screenshot%202025-10-15%20105233.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/168cbcbf0a866b4ebdf4cec84dd3dc7c3acde30d/Screenshot%202025-10-15%20105913.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/168cbcbf0a866b4ebdf4cec84dd3dc7c3acde30d/Screenshot%202025-10-15%20110143.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/168cbcbf0a866b4ebdf4cec84dd3dc7c3acde30d/Screenshot%202025-10-15%20110853.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/168cbcbf0a866b4ebdf4cec84dd3dc7c3acde30d/Screenshot%202025-10-15%20111734.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/168cbcbf0a866b4ebdf4cec84dd3dc7c3acde30d/Screenshot%202025-10-15%20112119.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/168cbcbf0a866b4ebdf4cec84dd3dc7c3acde30d/Screenshot%202025-10-15%20114719.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/168cbcbf0a866b4ebdf4cec84dd3dc7c3acde30d/Screenshot%202025-10-15%20145815.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/168cbcbf0a866b4ebdf4cec84dd3dc7c3acde30d/Screenshot%202025-10-15%20145840.png)
